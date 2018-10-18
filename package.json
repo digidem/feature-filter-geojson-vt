@@ -1,8 +1,8 @@
 {
-  "name": "feature-filter",
-  "version": "2.2.0",
+  "name": "feature-filter-geojson-vt",
+  "version": "3.0.0",
   "main": "./index.js",
-  "description": "Creates filtering function for vector tile features",
+  "description": "Creates filtering function for geojson-vt vector tile features",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^1.10.3",
@@ -26,6 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mapbox/feature-filter.git"
-  }
+    "url": "git+ssh://git@github.com/digidem/feature-filter-geojson-vt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digidem/feature-filter-geojson-vt/issues"
+  },
+  "homepage": "https://github.com/digidem/feature-filter-geojson-vt#readme",
+  "author": "",
+  "license": "ISC"
 }

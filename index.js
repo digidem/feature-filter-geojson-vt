@@ -6,14 +6,14 @@ var types = ['Unknown', 'Point', 'LineString', 'Polygon'];
 
 /**
  * Given a filter expressed as nested arrays, return a new function
- * that evaluates whether a given feature (with a .properties or .tags property)
+ * that evaluates whether a given feature (with a .tags property)
  * passes its test.
  *
  * @param {Array} filter mapbox gl filter
  * @returns {Function} filter-evaluating function
  */
 function createFilter(filter) {
-    return new Function('f', 'var p = (f && f.properties || {}); return ' + compile(filter));
+    return new Function('f', 'var p = (f && f.tags || {}); return ' + compile(filter));
 }
 
 function compile(filter) {
